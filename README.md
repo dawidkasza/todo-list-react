@@ -1,8 +1,17 @@
 # ToDo List
 
-Description
+## Description
+My task management website provides a simple yet efficient platform for creating and managing to-do lists. Users can easily add tasks, mark them as completed, and remove completed tasks from the list. Additionally, the website offers two convenient buttons for enhanced task management. The first button allows users to toggle between hiding and showing completed tasks, offering a clutter-free view. The second button enables users to mark all tasks as completed with just one click, streamlining the task completion process. With intuitive features and user-friendly interface, our website makes task management hassle-free and efficient.
 
-## Getting Started with Create React App
+## Technologies used in this project
+- React
+- HTML
+- CSS with BEM convention
+- JavaScript
+- MediaQueries
+- Grid
+- Flex
+- Immutability
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
