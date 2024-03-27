@@ -1,13 +1,12 @@
 import "./style.css";
 
-const onDelete = () => console.log("Klinięto przycist!");
-
-const Tasks = (props) => (
+const Tasks = ({ tasks, hideDone, removeTasks }) => (
   <ul className="task">
-    {props.tasks.map((task) => (
+    {tasks.map((task) => (
       <li
+        key={task.id}
         className={`task__item ${
-          task.done && props.hideDone ? "task__item--hidden" : ""
+          task.done && hideDone ? "task__item--hidden" : ""
         }`}
       >
         <button className=" task__button task__button--toggleDone">
@@ -20,7 +19,7 @@ const Tasks = (props) => (
         </span>
         <button
           className=" task__button task__button--remove "
-          onClick={onDelete}
+          onClick={() => removeTasks(task.id)}
         >
           🗑
         </button>
