@@ -1,6 +1,6 @@
 # ToDo List
 
-##DEMO
+## DEMO
 ![Dotolist](https://github.com/dawidkasza/todo-list-react/assets/98289771/477a07b1-3339-4a14-b447-6819dfb3ecb3)
 
 
