@@ -1,4 +1,3 @@
-import "./style.css";
 import { StyleContainer } from "./styled";
 
 const Container = (props) => (
