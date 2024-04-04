@@ -1,4 +1,4 @@
-import "./style.css";
+import { ButtonsContainer, StyleButton } from "./styled";
 
 const Buttons = (props) => {
   if (props.tasks.length === 0) {
@@ -6,19 +6,18 @@ const Buttons = (props) => {
   }
 
   return (
-    <div className="buttons">
-      <button onClick={props.toggleHideDone} className="buttons__button">
+    <ButtonsContainer>
+      <StyleButton onClick={props.toggleHideDone}>
         {props.hideDone ? "Pokaż ukończone" : "Ukryj ukończone"}
-      </button>
-      <button
+      </StyleButton>
+      <StyleButton
         onClick={props.setAllDone}
-        className="buttons__button"
         disabled={props.tasks.every(({ done }) => done)}
       >
         {" "}
         Ukończ wszystkie
-      </button>
-    </div>
+      </StyleButton>
+    </ButtonsContainer>
   );
 };
 
