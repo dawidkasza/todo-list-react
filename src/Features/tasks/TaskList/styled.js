@@ -31,7 +31,7 @@ export const Content = styled.span`
 
 export const Button = styled.button`
   border: none;
-  color: white;
+  color: ${({ theme }) => theme.color.white};
   width: 30px;
   height: 30px;
   padding: 0;
@@ -41,28 +41,27 @@ export const Button = styled.button`
   ${({ toggleDone }) =>
     toggleDone &&
     css`
-      background: hsl(120, 61%, 34%);
+      background: ${({ theme }) => theme.color.forestGreen};
 
       &:hover {
-        background: hsl(120, 61%, 44%);
-      }
+        filter: brightness(110%);
 
       &:active {
-        background: hsl(120, 61%, 54%);
+        filter: brightness(120%);
       }
     `}
 
   ${({ remove }) =>
     remove &&
     css`
-      background: hsl(0, 100%, 50%);
+      background: ${({ theme }) => theme.color.red};
 
       &:hover {
-        background: hsl(0, 100%, 60%);
+        filter: brightness(110%);
       }
 
       &:active {
-        background: hsl(0, 100%, 70%);
+        filter: brightness(120%);
       }
     `}
 `;

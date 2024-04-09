@@ -6,7 +6,7 @@ export const ButtonsContainer = styled.div`
 `;
 
 export const StyleButton = styled.button`
-  color: teal;
+  color: ${({ theme }) => theme.color.teal};
   background-color: transparent;
   border: none;
   margin: 0 0 0 20px;
@@ -28,7 +28,7 @@ export const StyleButton = styled.button`
   }
 
   &:disabled {
-    color: #ccc;
+    color: ${({ theme }) => theme.color.silver};
     cursor: not-allowed;
   }
 `;
