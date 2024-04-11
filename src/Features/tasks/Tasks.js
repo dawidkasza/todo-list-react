@@ -3,11 +3,12 @@ import TaskList from "./TaskList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
-import Container from "../../common/Container";
+import { GlobalStyle } from "../../GlobalStyle";
 
 function Tasks() {
   return (
-    <Container>
+    <>
+      <GlobalStyle />
       <Header title="Lista Zadań" />
       <Section title="Dodaj nowe zadanie" body={<Form />} />
 
@@ -16,7 +17,7 @@ function Tasks() {
         body={<TaskList />}
         extraHeaderContent={<Buttons />}
       />
-    </Container>
+    </>
   );
 }
 
