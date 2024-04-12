@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
-const activeClassName = "link-active";
-
 export const List = styled.ul`
   background: ${({ theme }) => theme.color.teal};
   margin: 0;
@@ -16,13 +14,11 @@ export const Item = styled.li`
   margin: 20px;
 `;
 
-export const StyledNavLink = styled(NavLink).attrs(() => ({
-  activeClassName,
-}))`
+export const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
 
-  &.${activeClassName} {
+  &.active {
     font-weight: bold;
   }
 
