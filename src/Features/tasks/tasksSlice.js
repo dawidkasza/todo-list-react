@@ -40,6 +40,10 @@ const tasksSlice = createSlice({
       state.tasks = tasks;
       state.status = "finish";
     },
+
+    fetchExampleTasksError: (state) => {
+      state.status = "error";
+    },
   },
 });
 
