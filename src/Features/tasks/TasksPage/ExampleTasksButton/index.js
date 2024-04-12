@@ -4,15 +4,15 @@ import { fetchExampleTasks, selectLoading } from "../../tasksSlice";
 
 export default () => {
   const dispatch = useDispatch();
-  const status = useSelector(selectLoading);
+  const loading = useSelector(selectLoading);
 
   return (
     <ButtonsContainer>
       <StyleButton
-        disabled={!status}
+        disabled={loading}
         onClick={() => dispatch(fetchExampleTasks())}
       >
-        {status ? "Pobierz przykładowe zadania" : "Ładowanie..."}
+        {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
       </StyleButton>
     </ButtonsContainer>
   );
