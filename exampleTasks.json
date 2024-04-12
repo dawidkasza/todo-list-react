@@ -1,36 +1,36 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "content": "Wstać z łóżka",
     "done": true
   },
   {
-    "id": 2,
+    "id": "2",
     "content": "Zjeść śniadanie",
     "done": false
   },
   {
-    "id": 3,
+    "id": "3",
     "content": "Iść pobiegać",
     "done": false
   },
   {
-    "id": 4,
+    "id": "4",
     "content": "Nauczyć się czegoś nowego",
     "done": false
   },
   {
-    "id": 5,
+    "id": "5",
     "content": "Spędzić czas z rodziną",
     "done": false
   },
   {
-    "id": 6,
+    "id": "6",
     "content": "Umyć się",
     "done": false
   },
   {
-    "id": 7,
+    "id": "7",
     "content": "Pójść spać",
     "done": false
   }
