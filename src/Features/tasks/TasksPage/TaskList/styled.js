@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 export const List = styled.ul`
   list-style: none;
@@ -65,3 +66,8 @@ export const Button = styled.button`
       }
     `}
 `;
+
+export const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: teal;
+`
